@@ -5,10 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Franco's Portfolio</title>
 
-    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/mytailwind.css" />
 </head>
-<body>
-    <h1>Welcome!</h1>
-    <p>This page is under construction...</p>
-</body>
+
+<body class="font-sans bg-white text-black antialiased">
+
+  <header class="border-b border-black sticky top-0 bg-white/95 backdrop-blur">
+    <nav class="max-w-5xl mx-auto flex items-center justify-between py-4 px-4">
+      <div class="font-bold text-lg uppercase tracking-wide">
+        FAHR Designs
+      </div>
+      <ul class="flex gap-8 text-sm uppercase font-semibold">
+        <li><a href="#about" class="hover:text-pink-500">About</a></li>
+        <li><a href="#skills" class="hover:text-pink-500">Skills</a></li>
+        <li><a href="#projects" class="hover:text-pink-500">Projects</a></li>
+        <li><a href="#contact" class="hover:text-pink-500">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="py-24 border-b border-black">
+    <div class="max-w-5xl mx-auto px-4">
+      <h1 class="text-7xl font-black uppercase tracking-tight leading-none">
+        Franco<br>Aguilar-Hernandez
+      </h1>
+
+      <div class="h-1 mt-6 w-48 bg-linear-to-r from-pink-500 via-fuchsia-400 to-cyan-400"></div>
+
+      <p class="mt-8 text-xl">Crafting code with elegance and logic</p>
+      <div class="mt-10 flex gap-8">
+        <a href="#projects"
+          class="font-bold text-lg px-6 py-3 border border-black hover:border-pink-500 hover:text-pink-500 transition">
+          See Projects
+        </a>
+
+        <a href="resume.pdf"
+          class="font-bold text-lg px-6 py-3 border border-black hover:border-cyan-400 hover:text-cyan-400 transition"
+          download>
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="max-w-5xl mx-auto px-4 py-24">
+    <h2 class="text-3xl font-bold mb-4 uppercase">About</h2>
+    <p class="max-w-3xl leading-relaxed">
+      I am a software engineer focused on building well-crafted, timeless applications that empower individual and small businesses.
+      I value simplicity, clarity, and longevity in code and design.
+    </p>
+  </section>
+
+  <section id="skills" class="max-w-5xl mx-auto px-4 py-24">
+    <h2 class="text-3xl font-bold mb-8 uppercase">Skills</h2>
+    <ul class="grid grid-cols-2 sm:grid-cols-3 gap-2 font-semibold">
+      <li>JavaScript</li>
+      <li>ASP .NET</li>
+      <li>Node.js</li>
+      <li>Django</li>
+      <li>HTML &amp; CSS</li>
+      <li>SQL</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="max-w-5xl mx-auto px-4 py-24">
+    <h2 class="text-3xl font-bold mb-10 uppercase">Projects</h2>
+    <div class="grid sm:grid-cols-2 gap-10">
+      <div class="border border-black p-6 hover:border-pink-500 transition">
+        <h3 class="font-black text-xl mb-2">Personal Library</h3>
+        <p class="mb-2">A book-tracking app with a vintage-inspired UI.</p>
+        <a href="#" class="underline font-semibold hover:text-pink-500">View</a>
+      </div>
+
+      <div class="border border-black p-6 hover:border-cyan-400 transition">
+        <h3 class="font-black text-xl mb-2">Time Capsule</h3>
+        <p class="mb-2">A digital journaling tool inspired by analog aesthetics.</p>
+        <a href="#" class="underline font-semibold hover:text-cyan-400">View</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="max-w-5xl mx-auto px-4 py-24">
+    <h2 class="text-3xl font-bold mb-8 uppercase">Contact</h2>
+    <form class="flex flex-col gap-4 max-w-md font-semibold">
+      <input type="text" placeholder="Name" class="border border-black px-3 py-2" required />
+      <input type="email" placeholder="Email" class="border border-black px-3 py-2" required />
+      <textarea placeholder="Message" class="border border-black px-3 py-2 h-32" required></textarea>
+      <button type="submit"
+        class="border border-black px-6 py-3 font-bold hover:border-fuchsia-400 hover:text-fuchsia-400 transition">
+        Send Message
+      </button>
+    </form>
+  </section>
+
+  <footer class="py-12 text-center border-t border-black">
+    <p class="text-sm">&copy; 2025 John Doe. Built with care and a touch of history.</p>
+  </footer>
+
+
 </html>
