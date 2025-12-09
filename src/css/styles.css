@@ -1,18 +1,18 @@
 :root {
   /* Custom Color Palette */
-  --color-cream: #eae7dc;
-  --color-tan: #d8c3a5;
+  --color-cream: #F1F1E6;
+  --color-tan: #FFF7D6;
   --color-gray: #8e8d8a;
-  --color-coral: #e98074;
-  --color-peach: #e8b5a4;
+  --color-blue: #0352A7;
+  --color-light-blue: #67A8FF;
 
   /* Semantic Colors */
-  --bg-primary: #eae7dc;
-  --bg-secondary: #d8c3a5;
+  --bg-primary: #F1F1E6;
+  --bg-secondary: #FFF7D6;
   --text-primary: #2c2c2c;
   --text-secondary: #8e8d8a;
-  --accent-primary: #e98074;
-  --accent-secondary: #e8b5a4;
+  --accent-primary: #0352A7;
+  --accent-secondary: #67A8FF;
 
   /* Typography */
   --font-display: "Playfair Display", serif;
